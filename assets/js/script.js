@@ -1,3 +1,21 @@
+class JSSlider {
+    constructor() {
+
+    }
+
+    run() {
+
+    }
+}
+
+
+
+
+
+
+
+
+
 const init = function() {
     const imagesList = document.querySelectorAll('.gallery__item');
     imagesList.forEach( img => {
@@ -5,6 +23,9 @@ const init = function() {
     }); // za każdym przeładowaniem strony przydzielaj inną nazwę grupy dla zdjęcia
 
     runJSSlider();
+
+    const jss = new JSSlider();
+    jss.run();
 }
 
 document.addEventListener('DOMContentLoaded', init);
