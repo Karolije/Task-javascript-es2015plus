@@ -91,10 +91,10 @@ export default class JSSlider {
         })
     }
 
-    onImageNext() {
+    onImageNext(event) {
         console.log(this, 'onImageNext');
         const currentClassName = 'js-slider__thumbs-image--current';
-        const current = this.querySelector('.' + currentClassName);
+        const current = event.currentTarget.querySelector('.' + currentClassName);
 
         const parentCurrent = current.parentElement;
         const nextElement = parentCurrent.nextElementSibling;
